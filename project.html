@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .text{
+    
+            background-color: gainsboro;
+            color:gray;
+            width:98%;
+            left:0%;
+            padding:20px;
+            font-style: cursive;
+            align-content: center;
+        }
+        .text h3 img{
+             display:flex;
+             margin-left:90%;
+             top:35%;
+             position: absolute;
+        }
+        .parent{
+            background-color: black;
+            width:100%;
+            height:100%;
+            display:flex;
+        }
+        .child1{
+            display:flex;
+            width:600px;
+            height:700px;
+
+        }
+        .child2{
+            display:flex;
+            color:white;
+            margin-left: 400px;
+            font-size: 60px;
+            font-weight: bold;
+    
+        }
+        .child2 span{
+            color:red;
+            display:flex;
+            font-weight:bold;
+            font-size: 50px;
+            margin-left: 90px;
+            margin-right: 0px;
+            top:54%;
+            position:absolute;
+
+
+            
+        }
+        .child2 h2{
+            display:flex;
+            font-size:20px;
+            color:white;
+            position:absolute;
+            top:70%;
+            font-weight:400;
+        }
+        .child2 a{
+            color:red;
+
+        }
+        #Readmore{
+            border-radius: 30px;
+            padding:18px 20px 18px 16px;
+            color:white;
+            position: absolute;
+            top:80%;
+            height:40px;
+            width:100px;
+            border:2px solid white;
+            background-color: grey;
+        }
+        #Readmore:hover{
+            background-color: coral;
+        }
+        .box{
+            display:flex;
+            background-color: grey;
+            width:100%;
+            height:900px;
+        }
+        .box1{
+            display:flex;
+            background-color:orange;
+            width:100%;
+            height:300px;
+        }
+        .icon{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon1{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            border-radius: 30px;
+            width:200px;
+            height:250px;
+            margin-top: 30%;
+            margin-left:20px;
+            border-radius: 10px;
+            justify-content: center;
+        }
+        .icon1 img{
+            width:60%;
+            height:40%;
+            margin-left:10px;
+            margin-top: 15%;
+        }
+        .icon1 h2{
+            position:absolute;
+            top:1100px;
+            text-transform: uppercase;
+            font-size: 20px;
+            display: flex;
+            margin-left:30px;
+        }
+        
+
+        .icon1 p{
+            position: absolute;
+            top:1150px;
+            display:flex;
+            margin-left: 20px;
+        }
+            
+
+            
+        
+        .icon2{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            border-radius: 30px;
+            width:200px;
+            height:250px;
+            margin-top: 30%;
+            margin-left: 40px;
+            border-radius: 10px;
+            justify-content: center;
+
+        }
+        .icon2 img{
+            width:80px;
+            height:90px;
+            margin-top: 15%;
+            margin-left:10px;
+        
+            
+        }
+        .icon2 h2{
+            position:absolute;
+            top: 1100px;
+            margin-left:40px;
+            font-size: 20px;
+            
+        }
+        .icon2 p{
+            position: absolute;
+            top:1150px;
+            margin-left: 40px;
+        }
+        .icon3{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            border-radius: 30px;
+            width:200px;
+            height:250px;
+            margin-top: 30%;
+            margin-left: 60px;
+            border-radius: 10px;
+            justify-content: center;
+
+
+        }
+        .icon3 img{
+            width:80px;
+            height:90px;
+            margin-left: 20px;
+            margin-top: 26%;
+
+        }
+        .icon3 h2{
+            position:absolute;
+            top:1150px;
+            margin-left:20px ;
+            font-size: 20px;
+        }
+        .icon3 p{
+            position: absolute;
+            top:1180px;
+            margin-left: 20px;
+        }
+        .icon4{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            border-radius: 30px;
+            width:200px;
+            height:250px;
+            margin-top: 30%;
+            margin-left: 70px;
+            border-radius: 10px;
+            justify-content: center;
+
+
+        }
+        .icon4 img{
+            width:90px;
+            height:100px;
+            margin-left: 20px;
+            margin-top: 18%;
+        }
+        .icon4 h2{
+            position: absolute;
+            top:1150px;
+            margin-left: 40px;
+            font-size: 20px;
+        }
+        .icon4 p{
+            position: absolute;
+            top:1180px;
+            margin-left: 30px;
+            color:orange;
+        }
+        .touch h1{
+             position: absolute;
+             top:1300px;
+            font-size: 30px;
+            font-family: Arial;
+            color:black;
+            left:2%;
+            
+        }
+        .touch h2{
+            font-size: 30px;
+            color:black;
+            position: absolute;
+            top:1380px;
+            font-family:"arial narrow";
+            left:2%;
+            
+        }
+        .touch p{
+            top:1500px;
+            position: absolute;
+            left:2%;
+            color:black;
+            font-size: 15px;
+            font-weight: 100;
+        }
+        .fb{
+            position:absolute;
+            top:1600px;
+            left:4%;
+            width:30px;
+            height:30px;
+        }
+        .twit{
+            position: absolute;
+            top:1600px;
+            left:7%;
+            width:30px;
+            height:30px;
+        }
+        .insta{
+            position: absolute;
+            top:1600px;
+            left:10%;
+            width:30px;
+            height:30px;
+            
+
+        }
+        .linked{
+            position: absolute;
+            top:1600px;
+            left:13%;
+            width:30px;
+            height:30px;
+        }
+        .email{
+            position:absolute;
+            top:1350px;
+            display: flex;
+            flex-direction: column;
+            color:black;
+            right:30%;
+            font-size: 20px;
+        }
+        .name{
+            position: absolute;
+            top:1350px;
+            display:flex;
+            flex-direction: column;
+            color:black;
+            right:10%;
+            font-size: 20px;
+        }
+        .message{
+            position: absolute;
+            top:1400px;
+            display: flex;
+            flex-direction: column;
+            color:black;
+            right:5%;
+            font-size: 20px;
+            width:300px;
+            height:200px;
+            font-size: medium;
+            
+            
+        }
+        #submit{
+            position:absolute;
+            top:1550px;
+            background-color: orangered;
+            color:white;
+            border-radius:50px;
+            right:10%;
+            padding:4px 4px 4px 4px;
+            height:30px;
+            border:2px solid orangered;
+            width:350px;
+
+        }
+        #submit:hover{
+            background-color: coral;
+        }
+        .footer{
+            background-color: black;
+            height:300px;
+            width:2000px;
+            top:2000px;
+        }
+        .footer p{
+            font-size: small;
+            font-weight: 200;
+            color:white;
+            margin-top: 0px;
+            text-align: center;
+            top:1800px;
+            position:absolute ;
+            right:400px;
+    
+        }
+        .footer h4{
+            position: absolute;
+            top:1900px;
+            right:400px;
+            font-size:small;
+            font-weight: 200;
+            color:white;
+            text-align: center;
+        } 
+        .footer a{
+            color:orangered;
+        }
+        .footer a:hover{
+            background-color: grey;
+        }
+
+            
+
+
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h2>logo</h2>
+        <h3><img src="https://static.thenounproject.com/png/4572821-200.png"width:30px height="30px"></h3>
+        </div>
+    <div class="parent">
+        <div class="child1">
+        <img src="https://png.pngtree.com/png-vector/20231103/ourmid/pngtree-happy-corporate-business-professional-one-man-clipart-white-background-png-image_10329231.png">
+        </div>
+        <div class="child2">
+        <p>Starting a new projects or want to collaborate with us?</p>
+        <span>Let's talk!</span>
+        <h2>Image from <a href>Freefik</a></h2>
+        <button id="Readmore">READMORE</button>
+    </div>
+    </div>
+    <div class="box">
+        <div class="box1">
+                <div class="icon">
+                    <div class="icon1"><img src="https://icones.pro/wp-content/uploads/2021/02/icone-de-broche-de-localisation-orange.png">
+                    <h2>our main office</h2>
+                        <p>Soho 94 Broadway St New<br> York, NY 1001</p></div>
+                    <div class="icon2"><img src="https://img.freepik.com/premium-vector/red-phone-flat-icon-isolated-white-background_401257-619.jpg">
+                        <h2>PHONE NUMBER</h2>
+                        <p>234-9876-5400<br>
+                            888-0123-4567 (Toll Free)</p>
+                    </div>
+                    <div class="icon3"><img src="https://cdn-icons-png.flaticon.com/256/1109/1109814.png">
+                        <h2>FAX</h2>
+                        <p>1-234-567-8900</p>
+                    
+                    </div>
+                    <div class="icon4"><img src="https://i.pinimg.com/originals/6e/5b/e8/6e5be8ee9d7d0d532988d35c6d5bd455.png">
+                        <h2>EMAIL</h2>
+                        <p><a><u>hello@theme.com</u></a></p>
+                    </div>
+            </div> 
+        </div>
+        </div>
+    
+        <div class="child3">
+            <div class="touch">
+                <h1>Get in touch</h1>
+                <h2>We can ensure reliability, low cost fares and most<br> important, with safety and comfort in mind.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Omnis quo modi accusantium eius neque id, nihil veniam <br>beatae soluta commodi!</p>
+            </div>
+                <img class="fb"src="https://www.pngitem.com/pimgs/m/46-464013_facebook-facebook-icon-white-circle-hd-png-download.png">
+                <img class="twit"src="https://static.vecteezy.com/system/resources/thumbnails/024/281/414/small/flat-twitter-black-bird-on-white-background-vector.jpg">
+                <img class="insta"src="https://i.pinimg.com/736x/02/77/12/027712250a632b2e6f63c5466b792494.jpg">
+                <img class="linked"src="https://st3.depositphotos.com/8943496/36360/v/450/depositphotos_363604792-stock-illustration-initial-letter-business-name-gold.jpg">
+
+                <email class="email">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter a valid email address">
+                </email>
+            <name class="name">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </name> 
+            <message class="message">
+                <label for="message">Message</label>
+                <textarea id="message"name="" id="message" placeholder="Message"></textarea>
+            </message>  
+            <div class="submit">
+                <button id="submit">SUBMIT</button>
+            </div> 
+            <div class="footer">
+                <p>Sample text. Click to select the text box. Click again or double<br> click to start editing the text.</p>
+                <h4><a>Free Website Templates </a> created with <a> ++Offline Website Builder</a></h4>
+            </div>
+        </div>
+    
+    
+    
+    
+
+
+    
+
+</body>
+</html>
+    
+</body>
+</html>
